@@ -1,0 +1,71 @@
+
+#logo{
+    width: 70%;
+    margin-left: 10px;
+}
+#cabecera{
+    border: solid 1px black;
+    display: flex;
+    width: 100%;
+}
+#menu{
+    width: 100%;
+    border: solid 1px black;
+}
+#menu_principal{
+    display: flex;
+    padding-left: 0;
+}
+li {
+   list-style-type: none; 
+}
+ul{
+    margin-left: 10px;
+}
+#lateral{
+    margin: 10px;
+    margin-left: 0;
+    width: 20%;
+    border: solid 1px black;
+    padding: 0px 10px;
+    float: left;
+}
+
+#principal{
+    border: solid 1px black;
+    width: 80%;
+    margin: 2px;
+    margin-right: 4px;
+    padding: 5px;
+}
+#secundario{
+    border: solid 1px black;
+    width: 20%;
+    padding: 10px;
+    margin: 2px;
+    height: 580px;
+}
+#buscador{
+    margin: auto;
+}
+#contenido{
+    border: solid 1px black;
+    display: flex;
+    width: 76%;
+    margin: auto;
+    margin-top: 10px;
+}
+#pie{
+    display: flex;
+    border: solid 1px black;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0px;
+}
+.enlaces{
+    width: 80%;
+}
+img{
+    float: left;
+    margin: 10px;
+}

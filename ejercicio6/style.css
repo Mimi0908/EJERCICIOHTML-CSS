@@ -1,0 +1,38 @@
+#titulo{
+    color:darkcyan;
+}
+p strong, p a, tfoot, tbody th{
+    color: red;
+}
+p .especial {
+    color: rgb(151, 0, 151);
+}
+.destacado,thead .especial, tbody .especial, tbody td strong{
+    color: gold;
+}
+#subtitulo, caption, p a em{
+    color: blue;
+}
+table, td, th{
+    border: solid 1px black;
+    padding: 5px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+#adicional{
+    color: rgb(111, 173, 2);
+}
+p #especial{
+    color: fuchsia;
+}
+div p a, tbody td{
+    color:rgb(1, 153, 77);
+}
+
+
+
+
+
