@@ -1,0 +1,85 @@
+.formulario{
+    border: solid 2px blue;
+}
+form i{
+    margin-top: 4px;
+    width: 5%;
+}
+nav img{
+    width: 5%;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+h2{
+    font-weight: bold;
+}
+.encabezado{
+    text-align: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 2%;
+    margin: 1%;
+}
+ul li{
+    margin-right: 40px;
+    display: flex;
+}
+ul li i{
+    margin-top: 4px;
+    width: 5%;
+    margin: 10px;
+}
+form i{
+    margin-right: 2px;
+}
+
+.principal{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5px;
+}
+.principal div{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 2%;
+    margin: 10px;
+    height: 250px;
+    width: 20%;
+}
+main{
+    text-align: center;
+}
+main button{
+    margin: 20px 10px;
+}
+footer{
+    background-color: rgb(246, 246, 252);
+    height: 150px;
+    text-align: center;
+    padding: 0;
+}
+.inferior{
+    background-color: rgb(211, 211, 218);
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    padding-top: 10px;
+    height: 50px;
+}
+.superior{
+   margin: 0;
+   height: 100px;
+   padding-top: 30px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.imgBody{
+    width: 100%;
+    border-radius: 2%;
+    height: 250px;
+}
