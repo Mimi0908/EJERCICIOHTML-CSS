@@ -1,0 +1,131 @@
+.formulario{
+    border: solid 2px gray;
+}
+nav{
+    background-color: #F2E1D8;
+}
+form .btn:hover{
+    color: #F2E1D8;
+}
+form i{
+    width: 10px;
+    font-size: 1.5em;
+    padding-right: 30px;
+}
+nav img{
+    width: 5%;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+h2{
+    font-weight: bold;
+}
+.encabezado{
+    text-align: center;
+    padding: 10px;
+    border-radius: 2%;
+    margin: 1% 0;
+}
+ul li{
+    width: 170px;
+    display: flex;
+    height: 70px;
+    
+}
+ul li a{
+    margin: auto;
+    margin-left: 5px;
+}
+ul li i{
+    width: 10px;
+    font-size: 1em;
+    margin: auto;
+    margin-right: 5px;
+}
+ul li:hover{
+    background-color: #f2cfbbe0;
+
+}
+form i{
+    margin-right: 2px;
+}
+
+.principal{
+    background-image: url("../img/c47cfe0e2434240e3b6aa3e3586ed152.png");
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5px 100px;
+    padding: 50px 0px;
+}
+.principal .caja{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 2%;
+    margin: 10px;
+    height: 250px;
+    width: 20%;
+    background-color: white;
+}
+main{
+    text-align: center;
+}
+main button{
+    margin: 20px 10px;
+}
+footer{
+    background-color:#F2E1D8;
+    height: 150px;
+    text-align: center;
+    padding: 0;
+}
+.inferior{
+    background-color: #F2CFBB;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    padding-top: 10px;
+    height: 50px;
+}
+.superior{
+   margin: 0;
+   height: 100px;
+   padding-top: 30px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.imgBody{
+    width: 100%;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    height: 100%;
+}
+.caja div{
+    height: 80%;
+}
+.abajo{
+    height: 20%;
+    display: flex;
+}
+.p{
+    text-align: left;
+    padding: 10px;
+    padding-left: 0;
+    font-weight: 700;
+    float: right;
+    width: 40%;
+}
+.des{
+    text-align: left;
+    padding: 5px 0px 5px 40px;
+    font-weight: 700;
+    float: left;
+    width: 60%;
+}
+main .btn{
+    color: white;
+}
