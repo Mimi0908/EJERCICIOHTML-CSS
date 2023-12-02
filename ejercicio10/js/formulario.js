@@ -17,8 +17,8 @@ lugar.addEventListener('change', validarLugar);
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
     if (campos.id && campos.nombre && campos.apellidos && campos.edad && campos.direccion && campos.correo && campos.webP && campos.lugar && campos.genero) {
-        if (edad>17){
-            console.log(edad)
+        if (edad>=18){
+            console.log(edad);
             alert("enviado");
             eliminarEstilos();
             resetearEstilos();
@@ -39,4 +39,3 @@ formulario.addEventListener('reset', () => {
 function eliminarEstilos() {
     formulario.reset();
 }
-

@@ -72,12 +72,10 @@ const validarCampoRadio = (expresion, input, campo) => {
     if (expresion.test(input.value)) {
         document.getElementById(`form-label-${campo}`).classList.add('form-label-correcto');
         document.getElementById(`form-label-${campo}`).classList.remove('form-label-incorrecto');
-        document.getElementById(`error-${campo}`).classList.remove('error-activo');
         campos[campo] = true;
     } else {
         document.getElementById(`form-label-${campo}`).classList.remove('form-label-correcto');
         document.getElementById(`form-label-${campo}`).classList.add('form-label-incorrecto');
-        document.getElementById(`error-${campo}`).classList.add('error-activo');
         campos[campo] = false;
     }
 }
@@ -88,14 +86,12 @@ const validarLugar = () => {
         document.getElementById('form-input-lugar').classList.add('form-input-incorrecto');
         document.getElementById('form-label-lugar').classList.remove('form-label-correcto');
         document.getElementById('form-label-lugar').classList.add('form-label-incorrecto');
-        document.getElementById('error-lugar').classList.add('error-activo');
         campos.lugar = false;
     } else {
         document.getElementById('form-input-lugar').classList.add('form-input-correcto');
         document.getElementById('form-input-lugar').classList.remove('form-input-incorrecto');
         document.getElementById('form-label-lugar').classList.add('form-label-correcto');
         document.getElementById('form-label-lugar').classList.remove('form-label-incorrecto');
-        document.getElementById('error-lugar').classList.remove('error-activo');
         campos.lugar = true;
     }
 }
@@ -105,13 +101,17 @@ function resetearEstilos() {
         if (campos.hasOwnProperty(campo)) {
             const label = document.getElementById(`form-label-${campo}`);
             const input = document.getElementById(`form-input-${campo}`);
-            const error = document.getElementById(`error-${campo}`);
+            if(campos[campo]!= campos.genero && campos[campo]!= campos.lugar){
+                const error = document.getElementById(`error-${campo}`);
+                error.classList.remove('error-activo');
+            }
+            
 
             label.classList.remove('form-label-incorrecto');
             label.classList.remove('form-label-correcto');
             input.classList.remove('form-input-incorrecto');
             input.classList.remove('form-input-correcto');
-            error.classList.remove('error-activo');
+           
         }
     }
 }
