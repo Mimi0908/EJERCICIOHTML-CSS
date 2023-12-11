@@ -6,6 +6,8 @@ const expresiones = {
     direccion: /^[a-zA-Z0-9\s,.-/\W/]{10,}$/,
     correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     webP: /^(ftp|http|https):\/\/[^ "]+$/,
+    usuario:/^[a-zA-ZÀ-ÿ0-9\s]{6,}$/,
+    contraseña: /^[a-zA-ZÀ-ÿ0-9\s,.-/\W/]{10,}$/,
     genero: /^masculino$|^femenino$|^otro$/
 }
 
@@ -17,6 +19,8 @@ const campos = {
     direccion: false,
     correo: false,
     webP: false,
+    usuario:false,
+    contraseña:false,
     lugar:false,
     genero:false
 }
@@ -46,6 +50,12 @@ const validar = (e) => {
             break;
         case "genero":
             validarCampoRadio(expresiones.genero, e.target, 'genero');
+            break;
+        case "password":
+            validarCampo(expresiones.contraseña, e.target, 'contraseña');
+            break;
+        case "usuario":
+            validarCampo(expresiones.usuario, e.target, 'usuario');
             break;
     }
 }
